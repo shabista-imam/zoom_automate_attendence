@@ -22,6 +22,7 @@ def meeting():
     registered = registrants.get_registrant_count(zoomUrl, meetingid)
     participating = participants.get_participant_count(zoomUrl, meetingid)
 
+    return '<h1>My Meeting</h1>' + \
     return '<h1>My Meeting (<i>' + meetingid + ')</i></h1>' + \
             '<h3>Registered: ' + registered + '</h3>' + \
             '<h3>Participating: ' + participating + '</h3>'
